@@ -1,13 +1,14 @@
-import { Link, Pathname, useHref } from 'react-router-dom';
-import { Header } from '../../components/Header';
-import { NavInformer } from '../../components/NavInformer';
-import { Sidebar } from '../../components/Sidebar';
+import { useHref, useLinkClickHandler, useLocation } from "react-router-dom";
+import { NavInformer } from "../../components/NavInformer";
+import { Sidebar } from "../../components/Sidebar";
 import style from './styles.module.scss';
 
-export function Home() {
+export function About(){
+    
 
     const breadCrumb = [
         {title: 'Início', url: '/'},
+        {title: 'Sobre', url: '/about'}
     ]
 
     return (

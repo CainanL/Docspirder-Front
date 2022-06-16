@@ -1,7 +1,6 @@
 .sidebarContainer {
     width: 300px;
-    position: fixed;
-    height: 100%;
+    height: calc(100vh - 60px);
     border-right: 1px rgb(193, 193, 193) solid;
     box-shadow: 0px 1px 10px rgb(159, 159, 159);
     transition: .3s;
@@ -9,8 +8,7 @@
 
 .sidebarContainerCollapsed {
     width: 60px;
-    position: fixed;
-    height: 100%;
+    height: calc(100vh - 60px);
     border-right: 1px rgb(193, 193, 193) solid;
     box-shadow: 0px 1px 10px rgb(159, 159, 159);
     transition: .3s;
@@ -31,4 +29,12 @@
 
     color: rgb(116, 116, 116);
     font-weight: 400;
+
+    &:hover {
+        background-color: rgba(50, 124, 146, 0.112);
+        box-shadow: 1px 1px 1px 1px rgb(159, 159, 159);
+    }
 }
+
+
+
