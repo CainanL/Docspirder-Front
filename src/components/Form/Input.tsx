@@ -7,9 +7,19 @@ interface InputProps {
     name: string;
     label?: string;
     error?: FieldError;
+    type?: string;
+    value?: any;
+    setValue?: (value: any) => void;
 };
 
-export const InputBase: ForwardRefRenderFunction<HTMLInputElement, InputProps> = ({ name, label, error = null, ...rest }: InputProps, ref) => {
+export const InputBase: ForwardRefRenderFunction<HTMLInputElement, InputProps> = ({
+    name,
+    label,
+    error = null,
+    type = 'text',
+    setValue,
+    ...rest
+}: InputProps, ref) => {
     return (
         <div className={style.container}>
             {!!label && <label htmlFor={name}>{label}</label>}
@@ -18,6 +28,7 @@ export const InputBase: ForwardRefRenderFunction<HTMLInputElement, InputProps> =
                 id={name}
                 ref={ref}
                 {...rest}
+                type={type}
             />
 
             {

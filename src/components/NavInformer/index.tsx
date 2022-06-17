@@ -14,7 +14,7 @@ export function NavInformer({ path }: NavInformerTypes) {
                 {
                     path.map(item =>
 
-                        <Link to={item.url}>
+                        <Link to={item.url} key={item.url}>
 
                             {
                                 path.indexOf(item) != 0 &&
