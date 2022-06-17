@@ -30,7 +30,7 @@ export function LuckAt() {
     const breadCrumb = [
         { title: 'Início', url: '/' },
         { title: 'Meus Documentos', url: '/myDocuments' },
-        { title: 'Update', url: '/myDocuments/update' }
+        { title: 'Sobre', url: '/myDocuments/lockAt' }
     ];
 
     const [file, setFile] = useState<any>();
