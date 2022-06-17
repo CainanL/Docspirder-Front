@@ -8,9 +8,8 @@ interface NavInformerTypes {
     }[];
 }
 export function NavInformer({ path }: NavInformerTypes) {
-    console.log(path)
     return (
-        <div>
+        <div className={style.wrapper}>
             <div>
                 {
                     path.map(item =>
@@ -35,7 +34,7 @@ export function NavInformer({ path }: NavInformerTypes) {
                     )
                 }
             </div>
-            <div>
+            <div className={style.titleContainer}>
                 <h1>{path[path.length - 1].title}</h1>
             </div>
         </div>

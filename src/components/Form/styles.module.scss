@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        background-color: #FFFFFF;
+        font-weight: 700;
+        margin-left: 10px;
+        color: rgb(76, 76, 76);
+    }
+
+    input {
+        width: 300px;
+        padding: 0.5rem;
+        border-radius: 10px;
+    }
+
+    p {
+        color: rgb(210, 62, 62);
+        font-weight: 400;
+    }
+
+}
